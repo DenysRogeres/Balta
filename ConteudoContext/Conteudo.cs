@@ -1,8 +1,12 @@
 namespace Balta.ConteudoContext 
 {
-    public class Conteudo 
+    public abstract class Conteudo 
     {
-        public int Id { get; set; }
+        public Conteudo()
+        {
+            Id = Guid.NewGuid();
+        }
+        public Guid Id { get; set; }
         public string? Titulo { get; set; }
         public string? Url { get; set; }
     }
