@@ -1,3 +1,5 @@
+using Balta.ConteudoContext.Enums;
+
 namespace Balta.ConteudoContext
 {
     public class Curso : Conteudo 
@@ -8,5 +10,7 @@ namespace Balta.ConteudoContext
         }
         public string? Tag { get; set; }
         public IList<Modulo> Modulos { get; set; }
+        public int DuracaoEmMinutos { get; set; }
+        public EConteudoNivel Nivel { get; set; }
     }
 }
