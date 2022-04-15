@@ -7,7 +7,17 @@ namespace Balta
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var artigos = new List<Artigo>();
+            artigos.Add(new Artigo("Artigo sobre .NET", "dotnet.com.br"));
+            artigos.Add(new Artigo("Artigo sobre Javascript", "javascript.com.br"));
+
+            foreach(var artigo in artigos) 
+            {
+                Console.WriteLine(artigo.Id);
+                Console.WriteLine(artigo.Titulo);
+                Console.WriteLine(artigo.Url);
+                Console.WriteLine("--------------");
+            }
 
         }
     }
