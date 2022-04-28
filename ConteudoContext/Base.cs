@@ -1,5 +1,4 @@
 using Balta.NotificacaoContext;
-
 namespace Balta.ConteudoContext
 {
     public class Base : Notificavel

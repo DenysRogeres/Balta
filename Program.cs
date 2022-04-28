@@ -49,6 +49,11 @@ namespace Balta
                     Console.WriteLine($"{item.Ordem} - {item.Titulo}");
                     Console.WriteLine(item.Curso?.Titulo);
                     Console.WriteLine(item.Curso?.Nivel);
+
+                    foreach(var notificacao in item.Notificacoes)
+                    {
+                        Console.WriteLine($"{notificacao.Propriedade} - {notificacao.Messagem}");
+                    }
                 }
             }
 
