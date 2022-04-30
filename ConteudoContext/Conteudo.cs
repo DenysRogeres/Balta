@@ -1,3 +1,5 @@
+using Balta.SharedContextContext;
+
 namespace Balta.ConteudoContext 
 {
     public abstract class Conteudo : Base
